@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+#conteiner {
+	position:relative;
+	}
+	
+
+
+#bg {
+	width:600px;
+	height:600px;
+	margin:40px auto 0;
+	background-position:center;
+	background-image:url(empire_state.jpg);
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;
+	}
+	
+.clr {
+	clear:both;	
+	}
+	
+#boat1 {
+	width:39px;
+	height:44px;
+	background-image:url(boat1.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:400px;
+	left:-45px;
+	-webkit-animation: boat2-animation 13s infinite ease-in-out;
+	-moz-animation: boat2-animation 13s infinite ease-in-out;
+	-o-animation: boat2-animation 13s infinite ease-in-out;
+	-ms-animation: boat2-animation 13s infinite ease-in-out;
+	animation: boat2-animation 13s infinite ease-in-out;
+	}	
+
+#boat2 {
+	width:39px;
+	height:44px;
+	background-image:url(boat2.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:425px;
+	left:-45px;
+	-webkit-animation: boat2-animation 23s infinite ease-in-out;
+	-moz-animation: boat2-animation 23s infinite ease-in-out;
+	-o-animation: boat2-animation 23s infinite ease-in-out;
+	-ms-animation: boat2-animation 23s infinite ease-in-out;
+	animation: boat2-animation 23s infinite ease-in-out;
+	}	
+	
+#boat3 {
+	width:32px;
+	height:36px;
+	background-image:url(boat3.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:390px;
+	left:-45px;
+	-webkit-animation: boat3-animation 33s infinite ease-in-out;
+	-moz-animation: boat3-animation 33s infinite ease-in-out;
+	-o-animation: boat3-animation 33s infinite ease-in-out;
+	-ms-animation: boat3-animation 33s infinite ease-in-out;
+	animation: boat3-animation 33s infinite ease-in-out;
+	}	
+	
+#smoke {
+	width:31px;
+	height:36px;
+	background-image:url(smoke.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:550px;
+	left:45px;
+	-webkit-animation: smoke-animation 23s infinite ease-in-out;
+	-moz-animation: smoke-animation 23s infinite ease-in-out;
+	-o-animation: smoke-animation 23s infinite ease-in-out;
+	-ms-animation: smoke-animation 23s infinite ease-in-out;
+	animation: smoke-animation 23s infinite ease-in-out;
+	}
+
+#smoke1 {
+	width:31px;
+	height:36px;
+	background-image:url(smoke.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:400px;
+	left:550px;
+	-webkit-animation: smoke-animation 13s infinite ease-in-out;
+	-moz-animation: smoke-animation 13s infinite ease-in-out;
+	-o-animation: smoke-animation 13s infinite ease-in-out;
+	-ms-animation: smoke-animation 13s infinite ease-in-out;
+	animation: smoke-animation 13s infinite ease-in-out;
+	}
+
+#smoke2 {
+	width:31px;
+	height:36px;
+	background-image:url(smoke.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	top:500px;
+	left:450px;
+	-webkit-animation: smoke-animation 13s infinite ease-in-out;
+	-moz-animation: smoke-animation 13s infinite ease-in-out;
+	-o-animation: smoke-animation 13s infinite ease-in-out;
+	-ms-animation: smoke-animation 13s infinite ease-in-out;
+	animation: smoke-animation 13s infinite ease-in-out;
+	}	
+	
+#rain{
+	width:600px;
+	height:600px;
+	background-image: url(rain.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	position:absolute;
+	-webkit-animation: rain-animation 13s infinite ease-in-out;
+	-moz-animation: rain-animation 13s infinite ease-in-out;
+	-o-animation: rain-animation 13s infinite ease-in-out;
+	-ms-animation: rain-animation 13s infinite ease-in-out;
+	animation: rain-animation 13s infinite ease-in-out;
+	}
+
+
+<!--webkit animation-->
+
+
+@-webkit-keyframes boat1-animation {
+	0% {opacity:1;}
+	44% {opacity:1;}
+	44.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}		
+	
+@-webkit-keyframes boat2-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;top:340px;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-webkit-keyframes boat3-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-webkit-keyframes smoke-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	
+	}	
+	
+@-webkit-keyframes smoke1-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+
+@-webkit-keyframes smoke2-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+	
+<!--moz animation-->
+
+
+@-moz-keyframes boat1-animation {
+	0% {opacity:1;}
+	44% {opacity:1;}
+	44.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-moz-keyframes boat2-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;top:340px;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-moz-keyframes boat3-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-moz-keyframes smoke-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	
+	}	
+	
+@-moz-keyframes smoke1-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+
+@-moz-keyframes smoke2-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}	
+	
+@-moz-keyframes rain-animation {
+	0% {opacity:1;}
+	40% {opacity:0.5;}
+	50% {opacity:0;}
+	70% {opacity:0.5;}
+	80% {opacity:1;}
+	90% {opacity:0.5;}	
+	100% {opacity:1;}
+	}
+<!--ms animation-->
+
+
+@-ms-keyframes boat1-animation {
+	0% {opacity:1;}
+	44% {opacity:1;}
+	44.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-ms-keyframes boat2-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;top:340px;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-ms-keyframes boat3-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-ms-keyframes smoke-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	
+	}	
+	
+@-ms-keyframes smoke1-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+
+@-ms-keyframes smoke2-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+	
+<!--o animation-->
+
+
+@-o-keyframes boat1-animation {
+	0% {opacity:1;}
+	44% {opacity:1;}
+	44.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-o-keyframes boat2-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;top:340px;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-o-keyframes boat3-animation {
+	0% {opacity:1;}
+	43% {opacity:1;}
+	43.1% {opacity:0;}
+	58% {opacity:0;}
+	58.1% {opacity:1;}
+	100% {opacity:1; top:300px; left:600px;}	
+	}	
+	
+@-o-keyframes smoke-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	
+	}	
+	
+@-o-keyframes smoke1-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+
+@-o-keyframes smoke2-animation {
+	0% {opacity:1;}
+	40% {opacity:0;}
+	50% {opacity:1;}
+	70% {opacity:0;}
+	80% {opacity:0;}
+	100% {opacity:1;}	
+	}
+	
+	
+
+	
